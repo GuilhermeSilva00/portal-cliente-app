@@ -3,10 +3,6 @@ module.exports = {
   slug: "transit",
   version: "1.0.0",
   icon: "./assets/transit/icon.png",
-  adaptiveIcon: {
-    foregroundImage: "./assets/transit/adaptive-icon.png",
-    backgroundColor: "#001f40",
-  },
   splash: {
     image: "./assets/transit/icon.png",
     resizeMode: "contain",
@@ -21,6 +17,10 @@ module.exports = {
   },
   android: {
     package: "com.transit.portal",
+    adaptiveIcon: {
+      foregroundImage: "./assets/transit/adaptive-icon.png",
+      backgroundColor: "#001f40",
+    },
   },
   plugins: [
     [

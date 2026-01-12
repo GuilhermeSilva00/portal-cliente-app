@@ -1,21 +1,25 @@
 import { WebView } from 'react-native-webview';
-import Constants from 'expo-constants';
 import { StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
+import { useCallback } from 'react';
+
+SplashScreen.preventAutoHideAsync();
 
 SplashScreen.setOptions({
-  duration: 1000,
+  duration: 400,
   fade: true,
 });
 
 export default function App() {
+
   return (
     <>
       <StatusBar hidden />
       <WebView
         style={styles.container}
-        source={{ uri: 'http://192.168.0.4:5173/' }}
+        source={{ uri: 'https://app2.skychart.com.br/portal-transit-83284/' }}
+        onLoadEnd={() => SplashScreen.hide()}
       />
     </>
   );
