@@ -16,13 +16,6 @@
       },
       "android": { "autoIncrement": true },
       "ios": { "autoIncrement": true }
-    },
-    "skychart": {
-      "env": {
-        "CLIENT": "skychart"
-      },
-      "android": { "autoIncrement": true },
-      "ios": { "autoIncrement": true }
     }
   },
   "submit": {
